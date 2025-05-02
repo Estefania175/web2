@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+    background-image: url("cuquio2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    background-color: #f0f4f8; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+    width: 30px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-right: 0;
+}
+
+button {
+    padding: 12px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #ccc;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.5);
+}
+
+/* Estilo para el botón "Página Principal" */
+button:nth-of-type(1) {
+    background-color: #e91e63; /* Rosa */
+}
+
+button:nth-of-type(1):hover {
+    background-color: #d81b60; /* Rosa más oscuro */
+}
+
+/* Estilos para los botones con otros colores */
+button:nth-of-type(2) {
+    background-color: #ff9800; /* Naranja */
+}
+
+button:nth-of-type(2):hover {
+    background-color: #fb8c00; /* Naranja más oscuro */
+}
+
+button:nth-of-type(3) {
+    background-color: #8bc34a; /* Verde */
+}
+
+button:nth-of-type(3):hover {
+    background-color: #7cb342; /* Verde más oscuro */
+}
+
+button:nth-of-type(4) {
+    background-color: #3f51b5; /* Azul */
+}
+
+button:nth-of-type(4):hover {
+    background-color: #303f9f; /* Azul más oscuro */
+}
+
+button:nth-of-type(5) {
+    background-color: #ff5722; /* Rojo */
+}
+
+button:nth-of-type(5):hover {
+    background-color: #f4511e; /* Rojo más oscuro */
+}
+
+button:nth-of-type(6) {
+    background-color: #009688; /* Teal */
+}
+
+button:nth-of-type(6):hover {
+    background-color: #00796b; /* Teal más oscuro */
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4caf50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #388e3c;
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 40px;
+    border-radius: 12px;
+    margin: 130px auto 40px;
+    width: 85%;
+    max-width: 960px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Colores de fondo según el color del botón */
+section:nth-of-type(1) {
+    background-color: #e91e63; /* Rosa */
+    color: white;
+}
+
+section:nth-of-type(2) {
+    background-color: #ff9800; /* Naranja */
+    color: white;
+}
+
+section:nth-of-type(3) {
+    background-color: #8bc34a; /* Verde */
+    color: white;
+}
+
+section:nth-of-type(4) {
+    background-color: #3f51b5; /* Azul */
+    color: white;
+}
+
+section:nth-of-type(5) {
+    background-color: #ff5722; /* Rojo */
+    color: white;
+}
+
+section:nth-of-type(6) {
+    background-color: #009688; /* Teal */
+    color: white;
+}
+
+section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: inherit;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+section a {
+    color: #ffffff;
+}
+
+section a:hover {
+    color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    section {
+        width: 95%;
+        padding: 30px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+}
+
